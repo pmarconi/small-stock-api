@@ -1,0 +1,6 @@
+- [x] Authentication middleware
+- [x] Logger
+- [ ] AWS bucket
+- [ ] GCP store
+- [ ] Websockets
+- [ ] Websockets auth
