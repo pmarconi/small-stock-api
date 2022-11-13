@@ -164,8 +164,11 @@ func New() *fiber.App {
 	// v1.Post("/books", handlers.RegisterBook)
 	// v1.Delete("/books/:id", handlers.DeleteBook)
 
-	v1.Get("/products", handlers.GetAllProducts)
-	v1.Get("/products/:id", handlers.GetProductByID)
+	v1.Post("/products/create", handlers.CreateProduct)
+	v1.Get("/products/:id", handlers.ReadProductByID)
+	v1.Put("/products/:id", handlers.UpdateProduct)
+	v1.Delete("/products/:id", handlers.DeleteProduct)
+	v1.Get("/products", handlers.ReadProducts)
 
 	utils.Warning().Println("Good")
 
